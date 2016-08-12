@@ -1,0 +1,145 @@
+/* CSS RESET */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style-type:none!important}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}a{text-decoration:none;color:inherit}*{font-feature-settings:kern;text-ren­der­ing:optimizeLegibility!important;-webkit-box-sizing:border-box!important;-moz-box-sizing:border-box!important;box-sizing:border-box!important;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;transition:.15s all ease-out;-webkit-transition:.15s all ease-out;-moz-transition:.15s all ease-out;-o-transition:.15s all ease-out;-webkit-style:none;}
+
+textarea, input {
+    outline: none;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'Helvetica Neue', 'HelveticaNeue-Light', Helvetica, Roboto, Noto, sans-serif;
+    color:#fff;
+    /*-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;*/
+}
+
+:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+/* END CSS RESET */
+
+html {
+    height:100%;
+    width:100%;
+    background: #4c98dd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4c98dd 0%, #6b7ee7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #4c98dd 0%,#6b7ee7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #4c98dd 0%,#6b7ee7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c98dd', endColorstr='#6b7ee7',GradientType=0 ); /* IE6-9 */
+}
+
+.main {
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    width:90%;
+    height:auto;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+}
+
+.section-info {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    z-index: 2;
+    width:50%;
+    margin: -80px -4px -4px 0;
+}
+
+.section-mockup {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    z-index: 3;
+    width:50%;
+    margin: 0 -4px -4px 0;
+}
+
+.section-footer {
+    display: block;
+    position: fixed;
+    top:auto;
+    left:0;
+    bottom:0;
+    right: 0;
+    z-index: 1;
+    height:240px;
+    background: rgba(255,255,255,.4);
+}
+
+.section-content {
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width:90%;
+    max-width: 1100px;
+}
+
+.logo {
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    height:32px;
+    width:auto;
+    margin:0;
+    padding:5px 0 0 44px;
+    font-size:20px;
+    font-weight: 500px !important;
+    background-image: url(images/HappyUpLogo.png);
+    background-size: auto 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.title {
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    max-width:480px;
+    margin: 40px 0 0 0;
+    font-size: 24px;
+    line-height: 1.4em;
+}
+
+.app-button {
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    height:48px;
+    margin: 50px 0 0 0;
+}
+
+.mockup {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    max-width:480px;
+}
+
+.footer-link {
+    display: inline-block;
+    position: relative;
+    margin:0 20px 0 0;
+    font-size: 18px;
+    font-weight: 500;
+}

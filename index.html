@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html id="top">
+<head>
+
+<title>Happy Up – Never forget your happy moments</title>
+<meta name="author" content="Happy Up" />
+<meta name="description" content="Never forget your happy moments with the Happy Up app for iPhone." />
+<meta name="keywords" content="happy,depression,app,happiness,mental,health,iphone,ios,app store,mental health"/>
+<meta charset="utf-8">
+
+<!-- Facebook -->
+<meta property="og:type"                    content="website" />
+<meta property="og:title"                   content="Happy Up – Never forget your happy moments" />
+<meta property="og:description"             content="Never forget your happy moments with the Happy Up app for iPhone." />
+<meta property="og:image"                   content="images/HappyUpPromo.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card"                   content="app">
+<meta name="twitter:site"                   content="@happyupapp">
+<meta name="twitter:title"                  content="Happy Up – Never forget your happy moments">
+<meta name="twitter:image"                  content="images/HappyUpPromo.png">
+<meta name="twitter:description"            content="Never forget your happy moments with the Happy Up app for iPhone.">
+<meta name="twitter:app:name:iphone"        content="Happy Up – Never forget your happy moments">
+<meta name="twitter:app:id:iphone"          content="1025944178">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/HappyUpLogoColor.png">
+<link rel="icon" sizes="512x512" href="images/HappyUpLogoColor.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="top">
+
+<div class="main">
+
+    <div class="section-info">
+        <a href="/"><div class="logo">Happy Up</div></a>
+        <h1 class="title">Collect your favourite happy moments each day. Reflect to make yourself smile.</h1>
+        <a href="" alt="Happy Up on the App Store" title="Happy Up on the App Store"><img class="app-button" src="images/app-store.png" alt="Happy Up on the App Store"/></a>
+    </div>
+
+    <div class="section-mockup">
+        
+        <img class="mockup" src="images/AppWithHearts.png" alt="Happy Up on the App Store"/>
+
+    </div>
+
+    <div class="section-footer">
+        <div class="section-content">
+            <a class="footer-link" href="" alt="Tweet us" title="Tweet us">Any questions? Tweet us @HappyUpApp</a>
+            <a class="footer-link" href="" alt="Privacy & Terms" title="Privacy & terms">Privacy & Terms</a>
+        </div>
+    </div>
+
+</div>
+
+<script language="javascript">
+
+    var UA = {
+        Windows: function() {
+            return /IEMobile/i.test(navigator.userAgent);
+        },
+        Android: function() {
+            return /Android|Samsung/i.test(navigator.userAgent);
+        },
+        BlackBerry: function() {
+            return /BlackBerry/i.test(navigator.userAgent);
+        },
+        iOS: function() {
+            return /iPhone|iPod/i.test(navigator.userAgent);
+        },
+        Mac: function() {
+            return /Mac OS X/i.test(navigator.userAgent);
+        },
+        
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+        }
+    };
+
+    var emojiManager = function($){
+
+        function init(){
+            if (!userDoesSupportEmoji()){
+                renderFallBackEmoji();
+            }
+        }
+
+        function getAndroidVersion(ua) {
+            ua = (ua || navigator.userAgent).toLowerCase(); 
+            var match = ua.match(/android\s([0-9\.]*)/);
+            return match ? match[1] : false;
+        };
+
+        function userDoesSupportEmoji(){
+            return ( UA.Mac() || UA.iOS() || getAndroidVersion() && (parseFloat(getAndroidVersion()) >= 4.4));
+        }
+
+        function renderFallBackEmoji(){
+            twemoji.size = '72x72';
+            $('.emoji').each(function(){
+                twemoji.parse(this)
+            });
+        }
+
+        return {
+            init : init
+        }
+
+    }($)
+  
+    $(document).ready(function(){
+        emojiManager.init();
+    });
+  
+</script>
+
+</body>
+
+</html>
