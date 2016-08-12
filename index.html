@@ -46,15 +46,13 @@
     </div>
 
     <div class="section-mockup">
-        
         <img class="mockup" src="images/AppWithHearts.png" alt="Happy Up on the App Store"/>
-
     </div>
 
     <div class="section-footer">
         <div class="section-content">
-            <a class="footer-link" href="" alt="Tweet us" title="Tweet us">Any questions? Tweet us @HappyUpApp</a>
-            <a class="footer-link" href="" alt="Privacy & Terms" title="Privacy & terms">Privacy & Terms</a>
+            <a class="footer-link" href="mailto:hi@happyupapp.com" alt="Tweet us" title="Tweet us">hi@happyupapp.com</a>
+            <a class="footer-link" href="http://onword.co/10714/" alt="Terms" title="Terms">Terms</a>
         </div>
     </div>
 
@@ -117,7 +115,17 @@
   
     $(document).ready(function(){
         emojiManager.init();
+        attachEvents();
     });
+
+    function attachEvents(){
+
+        $(document).on('click','.app-button',function(e){
+            e.preventDefault();
+            alert('Thank you so much for your interest. Happy Up is coming very soon!');
+        });
+
+    }
   
 </script>
 
