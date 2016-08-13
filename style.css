@@ -146,7 +146,7 @@ html {
     position: relative;
     vertical-align: middle;
     top:18px;
-    left:-1px;
+    left:0;
     width:100%;
     height:auto;
     max-width:480px;
