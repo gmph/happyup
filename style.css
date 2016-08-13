@@ -145,7 +145,7 @@ html {
     display: block;
     position: relative;
     vertical-align: middle;
-    top:20px;
+    top:18px;
     left:-1px;
     width:100%;
     height:auto;
@@ -158,6 +158,18 @@ html {
     margin:0 20px 0 0;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media (max-width:1010px) {
+
+    .title {
+        font-size:20px;
+    }
+
+    .subtitle {
+        font-size:17px;
+    }
+
 }
 
 @media (max-width:860px) {
